@@ -1,0 +1,14 @@
+import { Router } from "express";
+import { authenticate, authorize } from "../middleware/auth.middleware.js";
+import { createVehicle, deleteVehicle, listVehicles, purchaseVehicle, restockVehicle, searchVehicles, updateVehicle } from "../controllers/vehicle.controller.js";
+import { asyncHandler } from "../utils/async-handler.js";
+const router = Router();
+router.use(authenticate);
+router.get("/search", asyncHandler(searchVehicles));
+router.get("/", asyncHandler(listVehicles));
+router.post("/", asyncHandler(createVehicle));
+router.put("/:id", asyncHandler(updateVehicle));
+router.delete("/:id", authorize("admin"), asyncHandler(deleteVehicle));
+router.post("/:id/purchase", asyncHandler(purchaseVehicle));
+router.post("/:id/restock", authorize("admin"), asyncHandler(restockVehicle));
+export default router;
