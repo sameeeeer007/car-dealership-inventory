@@ -13,7 +13,7 @@ export function VehicleCard({ vehicle, onPurchase, onEdit, isAdmin, busy = false
       <p className="text-xs uppercase tracking-[.18em] text-slate-400">{vehicle.make}</p>
       <h2 className="mt-1 text-xl font-semibold text-white">{vehicle.model}</h2>
       <div className="mt-4 flex items-center justify-between">
-        <span className="text-2xl font-bold text-white">${vehicle.price.toLocaleString("en-US")}</span>
+        <span className="text-2xl font-bold text-white">₹{vehicle.price.toLocaleString("en-IN")}</span>
         <span className={`stock-pill ${vehicle.quantity > 0 ? "stock-in" : "stock-out"}`}><PackageCheck size={14}/>{vehicle.quantity} in stock</span>
       </div>
       <div className="mt-5 flex gap-2">
