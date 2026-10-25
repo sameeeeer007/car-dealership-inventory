@@ -31,10 +31,6 @@ The system incorporates role-based authorization, JWT authentication, search and
 ![DriveDeck Inventory Dashboard](docs/screenshots/dashboard-overview.png)
 *Real-time inventory listing displaying Indian car models, category tags, stock indicators, and Indian Rupee (`₹`) pricing.*
 
-### Authentication & Demo Access
-![DriveDeck Authentication Screen](docs/screenshots/login-screen.png)
-*Secure sign-in and account registration with quick-fill demo buttons for instant evaluator access.*
-
 ---
 
 ## Key Features
