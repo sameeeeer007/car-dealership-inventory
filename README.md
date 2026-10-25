@@ -45,6 +45,8 @@ The system incorporates role-based authorization, JWT authentication, search and
   - **Regular Users**: Search, filter by category, view real-time stock, and purchase vehicles.
   - **Admins**: Add new vehicles, update listings, restock inventory units, and delete records.
   - *Privilege Escalation Protection*: Public registration explicitly creates standard users; admin role cannot be self-assigned via registration payload.
+- **Interactive Budget Filters & Multi-Parameter Sorting**: One-click quick budget pills (`Under ₹10 Lakh`, `₹10L – ₹20L`, `Above ₹20L`) paired with dynamic multi-criteria sorting (Price: Low to High / High to Low, Most Stock First).
+- **Order Confirmation Receipt Modal**: Immediate celebratory checkout modal upon purchase containing unique Order Reference `#DD-XXXXXX`, purchase timestamp, total amount paid in `₹`, and a one-click print/PDF receipt action.
 - **Indian Market Localization**: Pre-loaded catalog of popular Indian automobiles (Maruti Suzuki Swift, Dzire, Toyota Innova Crysta, Mahindra Thar, Tata Nexon, Hyundai Creta, Mahindra XUV700, Toyota Fortuner, etc.) with prices formatted in Indian Rupees (`₹` with `en-IN` numbering).
 - **Zero-Config Local Fallback**: Automatically connects to local MongoDB, with seamless fallback to an embedded in-memory MongoDB instance (`MongoMemoryServer`) if no local database daemon is active.
 

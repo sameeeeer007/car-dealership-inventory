@@ -126,3 +126,25 @@ I want to adapt DriveDeck specifically for the Indian automotive market:
    - Premium SUVs / MPVs: Toyota Innova Crysta GX, Mahindra XUV700 AX7, Toyota Fortuner 4x4 Legender, Tata Harrier
 3. Ensure the database seeding logic detects if Indian car models are already present, and replaces old listings cleanly.
 ```
+
+---
+
+## Phase 7: Interactive E-Commerce UX (Budget Filters, Sorting & Receipt Modal)
+
+### Prompt 007
+- **Date**: 2026-10-25
+- **Tool**: Claude 3.5 Sonnet
+- **Prompt**:
+```text
+I want to enhance the customer shopping experience on the DriveDeck dashboard with two high-value features:
+1. Budget Filtering & Sorting:
+   - Add clickable quick-budget pill buttons for "All Budgets", "Under ₹10 Lakh", "₹10L – ₹20 Lakh", and "Above ₹20 Lakh".
+   - Add a Sort dropdown with options: "Featured", "Price: Low to High", "Price: High to Low", and "Most Stock First".
+   - Combine these filters with the existing text search and category dropdown cleanly in a memoized selector.
+2. Order Confirmation Receipt Modal:
+   - When a purchase succeeds, open a celebratory receipt modal rather than a simple inline notification.
+   - Include a green confirmation badge, dynamic Order ID reference (#DD-XXXXXX), vehicle details, formatted amount paid in ₹, remaining units left on lot, timestamp, and a "Print Slip" button that triggers window.print().
+
+Implement this in `client/src/pages/Dashboard.tsx` cleanly adhering to existing styles and Lucide React icons.
+```
+
